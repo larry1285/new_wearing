@@ -6,13 +6,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends Activity implements View.OnClickListener {
-
+    Button my_button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        my_button=(Button)findViewById(R.id.larry);
+        my_button.setOnClickListener(this);
     }
 
     @Override
@@ -28,8 +32,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 // Add the message as a payload to the Intent. We add data to be carried by the intern using
                 // the putExtra() methods. The data is specified as a key-value pair. The first parameter is
                 // the key, specified as a string, and the second parameter is the value.
-
-                //in.putExtra("message", getString(R.string.greetstring) + friendName + "!");
+                EditText editFriendName = (EditText) findViewById(R.id.editText);
+                String friendName = editFriendName.getText().toString();
+                in.putExtra("message", friendName +  "!");
 
                 // We start the new activity by calling this method to inform the Android framework to start
                 // the new activity. The parameter is the Intent we just created earlier
