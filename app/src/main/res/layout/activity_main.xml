@@ -63,7 +63,7 @@
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:id="@+id/imageView3"
+            android:id="@+id/class_image"
             android:layout_below="@+id/linearLayout"
             android:layout_centerHorizontal="true"
             android:src="@drawable/classroom" />
@@ -71,7 +71,7 @@
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:id="@+id/imageView2"
+            android:id="@+id/movie_image"
             android:src="@drawable/movie"
             android:layout_below="@+id/linearLayout"
             android:layout_toEndOf="@+id/linearLayout2"
@@ -113,13 +113,13 @@
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:id="@+id/imageView4"
+            android:id="@+id/shopping_image"
             android:src="@drawable/shopping" />
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:id="@+id/imageView5"
+            android:id="@+id/singlesmixer_image"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="100dp"
             android:src="@drawable/singles_mixer" />
@@ -160,31 +160,15 @@
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:id="@+id/imageView6"
+            android:id="@+id/workout_image"
             android:src="@drawable/workout" />
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:id="@+id/imageView7"
+            android:id="@+id/formal_image"
             android:layout_marginLeft="100dp"
             android:src="@drawable/formal" />
     </LinearLayout>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/larry"
-        android:layout_alignBottom="@+id/editText"
-        android:layout_toEndOf="@+id/linearLayout3" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/larry" />
 
 </RelativeLayout>
